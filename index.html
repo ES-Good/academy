@@ -14,16 +14,16 @@
 <body>
     <!-- Nav -->
     <div class="container-fluid header bg-blue py-2">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border-0 order-3" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <a href="#" class="navbar-brend flex-column text-decoration-none d-flex align-items-center">
+                <a href="#" class="navbar-brend flex-column text-decoration-none d-flex align-items-center order-1">
                   <img src="img/logo/logo-header.png" alt="logo" class="logo-img">
                 </a>
-                <button type="button" class="btn phone-mobile  d-block d-md-none"><img src="img/phone/phone.png" alt=""></button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <a href="" class="d-block d-lg-none order-2"><img src="img/phone/mobile-phone.png" alt=""></a>
+                <div class="collapse navbar-collapse justify-content-center order-4" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item text-center active">
                         <a class="nav-link text-white" href="#">Главная</a>
@@ -45,7 +45,7 @@
                       </li>
                     </ul>
                   </div>
-                  <p class="phone-header text-blue d-none d-md-block mb-0 text-white"><b>8 800 800 01 01</b></p>
+                  <a class="phone-header text-blue d-none d-lg-block mb-0 text-white order-5"><b>8 800 800 01 01</b></a>
               </div>
         </nav>
     </div>
@@ -55,8 +55,18 @@
             <div class="row d-flex flex-wrap">
               <div class="col-12 col-lg-6 d-flex flex-column align-items-start justify-content-around pt-5 position-relative pb-5">
                 <h1 class="title-big title-top-section">Как решить все проблемы семьи <br><span>за три месяца</span></h1>
-                <img src="img/header/wheel.png" alt="banner" class="img-fluid d-block d-lg-none">
-                <p class="text-black mt-3 mx-lg-0 text-center text-lg-left">Зарегистрируйся на мастер-класс и получи<br> чек-лист “Влияние эмоций на здоровье тела”<br>
+                <div class="d-block d-lg-none mobile-box-img">
+                  <img src="img/top-section/girl.png" alt="banner" class="img-fluid">
+                  <div class="card">
+                    <div class="card__inner">
+                      <div class="triangle"></div>
+                      <p class="text-center"><b>Эксперт с опытом работы 25 лет
+                        в области парапсихологии, к.т.н., доцент, изобретатель, поэт, контактер</b></p>
+                    </div>
+                  </div>
+                  <div class="card__text-name text-right">Скоморохова Ольга<br>Парапсихолог</div>
+                </div>
+                <p class="text-black mt-3 mx-lg-0 text-center text-lg-left">Зарегистрируйся на мастер-класс и получи<br class="d-none d-md-block"> чек-лист “Влияние эмоций на здоровье тела”<br class="d-none d-md-block">
                   в подарок</p>
                 <button type="button" class="btn btn_blue text-nowrap mt-2 mx-auto mx-lg-0 mb-5" data-toggle="modal" data-target="#myModal">Получить подарок</button>
               </div>
@@ -101,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-lg-4 d-flex justify-content-center">
             <img src="img/questions/girl.png" alt="" class="img-fluid">
           </div>
           <div class="col-12 col-lg-4 d-flex flex-column justify-content-between">
@@ -128,7 +138,7 @@
       </div>
     </div>
     <!-- темы и отзывы -->
-    <div class="container-fluid theme-and-reviews">
+    <div class="container-fluid theme-and-reviews mb-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -182,7 +192,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row my-5">
           <div class="col-12">
             <h2 class="title-medium">Отзывы наших<br> участников</h2>
           </div>
@@ -194,48 +204,43 @@
                 <div class="card">
                   <div class="card__inner">
                     <div class="triangle"></div>
-                    <p>Узнаете об обучающих курсах в Академии самосовер- шенствования и трех школах. 
-                      Для чего она создана и чему можно научиться за три месяца, на занятиях этих онлайн школ, о ее структуре.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="triangle"></div>
-                  <div class="card__inner">
-                    <p>Узнаете об обучающих курсах в Академии самосовер- шенствования и трех школах. 
-                      Для чего она создана и чему можно научиться за три месяца, на занятиях этих онлайн школ, о ее структуре.
+                    <p>Кихаева Татьяна<br>
+                      Ольга Михайловна! Знаю вас много лет по риэлторской дейтяльности,
+                      преподовательской деятельности! Но открылись вы мне уже много лет назад
+                      <br>
+                      <input type="button" href="" id="btn-read" class="bg-transparent border-0 p-0 mt-1" value="Читать полностью...">
+                      <br>
+                      <p id="text-read" class="d-none">
+                        совершенно с другой стороны! Наука изотерика мне абсолютно неизвестна. 
+                        Но как вы мне помогали и помогаете - я восхищена!!! Много раз вы находили мне
+                        потерянные вещи, указывая абсолютно верные координаты. Многие советы в личной
+                        жизникорректировали отношения с любимыми и близкими людьми. А ваши советы по бизнесу
+                        вообще бесценны!!! Вы большая умница, ваш дар и талант помогает многим людям. Желаю вам всего доброго
+                        в вашем новом деле обучения и просвещения!!! С уважением ваш друг Кихаева Татьяна.
                       </p>
-                  </div>
-                </div>
-              </div>
-              <div class="reviews-text__slide">
-                <div class="card">
-                  <div class="card__inner">
-                    <div class="triangle"></div>
-                    <p>Узнаете об обучающих курсах в Академии самосовер- шенствования и трех школах. 
-                      Для чего она создана и чему можно научиться за три месяца, на занятиях этих онлайн школ, о ее структуре.
                     </p>
                   </div>
                 </div>
                 <div class="card">
                   <div class="triangle"></div>
                   <div class="card__inner">
-                    <p>Узнаете об обучающих курсах в Академии самосовер- шенствования и трех школах. 
-                      Для чего она создана и чему можно научиться за три месяца, на занятиях этих онлайн школ, о ее структуре.
+                    <p>Лысенко Ольга<br>
+                      Уже много лет сотрудничаю с это организацией и я довольна, что в своё время Ольгу Михайловну.
+                      Я очень благодарна ей за это и поддерживаю все её начинания.
                       </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4">
+          <div class="col-12 col-xl-4">
             <div class="reviews-video">
                 <div class="reviews-video__slide">
                   <div class="card">
                     <div class="card__inner">
                       <div class="triangle"></div>
                       <div>
-                        <iframe width="100%" height="365px" src="https://www.youtube.com/embed/k3SlL19D2rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="340px" src="https://www.youtube.com/embed/k3SlL19D2rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                   </div>
                   </div>
@@ -245,7 +250,7 @@
                     <div class="card__inner">
                       <div class="triangle"></div>
                       <div>
-                        <iframe width="100%" height="365px" src="https://www.youtube.com/embed/k3SlL19D2rE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://vk.com/video_ext.php?oid=246146272&id=456239025&hash=12ab67b95588a200" width="100%" height="340" frameborder="0" allowfullscreen></iframe>
                       </div>
                   </div>
                   </div>
@@ -255,22 +260,24 @@
         </div>
       </div>
     </div>
-    <footer class="container-fluid bg-blue py-5">
+    <footer class="container-fluid bg-blue py-5 mt-5">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xl-8">
+          <div class="col-12 col-lg-7">
             <h2 class="text-white title-medium footer__title text-left">Записаться <br> <span>на бесплатный мастер-класс</span></h2>
-            <p class="text-white">Узнаете об обучающих курсах в Академии самосовер- шенствования и трех школах. 
+            <p class="text-white mt-5">Узнаете об обучающих курсах в Академии самосовер- шенствования и трех школах. 
               Для чего она создана и чему можно научиться за три месяца, на занятиях этих онлайн школ, о ее структуре.
               </p>
           </div>
-          <div class="col-12 col-lg-4">
-            <form action="">
-              <input type="text">
-              <input type="text">
-              <input type="text">
-              <button class="btn">btn</button>
-            </form>
+          <div class="col-12 col-lg-5">
+            <div>
+              <form action="#" class="d-flex flex-column align-items-center form form_footer">
+                <input type="text" placeholder="Ваше имя">
+                <input type="tel" placeholder="Ваш телефон">
+                <input type="email" placeholder="Ваш E-mail">
+                <button type="submit" class="btn btn_white align-self-start ml-4 mt-5">Записатся</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

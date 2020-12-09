@@ -1,3 +1,49 @@
 @media (min-width: 576px) {
   .title-medium {
-    text-align: center; } }
+    text-align: center;
+    font-size: 62px; }
+  .title-big {
+    font-size: 70px; }
+  .title-top-section {
+    line-height: 65px; }
+    .title-top-section span {
+      font-size: 46px; }
+  .card__text-name {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    left: -17px;
+    font-style: italic;
+    font-size: 18px; } }
+
+@media (min-width: 992px) {
+  .top-section {
+    background-position-y: center; }
+    .top-section .card {
+      box-shadow: none;
+      bottom: 50px;
+      width: 90%; }
+  .theme-and-reviews .card {
+    width: 60%;
+    height: 170px; }
+    .theme-and-reviews .card__inner {
+      width: 100%;
+      height: 100%; }
+  .theme-and-reviews__card-num {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -80px;
+    font-size: 78px;
+    font-weight: 700;
+    font-family: "PalatinoLinotype-Roman"; }
+  .theme-and-reviews__p-col {
+    padding-left: 90px;
+    padding-right: 90px; }
+  .card__text-name {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -45%;
+    font-style: italic; }
+  .reviews-text .card {
+    height: auto; } }
