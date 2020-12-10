@@ -8,7 +8,7 @@ $('.reviews-video').slick({
     cssEase: 'linear'
   });
 
-  btnRead.onclick = function(){
-    btnRead.classList.add('d-none');
-    document.getElementById('text-read').classList.remove('d-none')
-  }
+btnRead.onclick = function(){
+  btnRead.classList.add('d-none');
+  document.getElementById('text-read').classList.remove('d-none')
+}
