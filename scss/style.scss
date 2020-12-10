@@ -16,6 +16,10 @@
     background-repeat: no-repeat;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 $blue: #0D5699;
 
 body{
@@ -70,7 +74,7 @@ p{
 
     &_blue{
         background-color: $blue;
-        color: #fff;
+        color: #fff !important;
         box-shadow: 0 0 10px rgba($blue, $alpha: .5);
     }
 
