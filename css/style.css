@@ -146,21 +146,22 @@ p {
     font-weight: 700; }
 
 .reviews-text {
-  margin: 20px; }
+  margin: 0px; }
   .reviews-text__slide .card {
-    width: 80%;
-    margin-bottom: 45px; }
+    width: 100%;
+    margin-bottom: 45px;
+    height: auto; }
   .reviews-text__slide .card:nth-child(odd) {
-    margin-left: 130px; }
+    margin-left: 0px; }
 
 .reviews-video .card {
   width: 100% !important;
   height: 430px !important; }
 
 footer .footer__title {
-  line-height: 45px; }
+  line-height: 26px; }
   footer .footer__title span {
-    font-size: 48px; }
+    font-size: 28px; }
 
 .form input::-moz-placeholder {
   color: #fff;
@@ -179,3 +180,15 @@ footer .footer__title {
   padding: 20px 0 20px 20px; }
   .form input:focus {
     outline: none; }
+
+.avatar {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  left: 40px;
+  top: -30px; }
+  .avatar img {
+    width: 100%;
+    height: 100%; }

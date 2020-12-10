@@ -202,14 +202,15 @@ p{
 }
 
 .reviews-text{
-    margin: 20px;
+    margin: 0px;
     &__slide{
         .card{
-            width: 80%;
+            width: 100%;
             margin-bottom: 45px;
+            height: auto;
         }
         .card:nth-child(odd){
-            margin-left: 130px;
+            margin-left: 0px;
         }
     }
 }
@@ -223,9 +224,9 @@ p{
 
 footer{
     .footer__title{
-        line-height: 45px;
+        line-height: 26px;
         span{
-            font-size: 48px;
+            font-size: 28px;
         }
     }
 }
@@ -252,5 +253,19 @@ footer{
         &:focus{
             outline: none;
         }
+    }
+}
+
+.avatar{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 20px rgba($color: #000000, $alpha: .5);
+    left: 40px;
+    top: -30px;
+    img{
+        width: 100%;
+        height: 100%;
     }
 }
