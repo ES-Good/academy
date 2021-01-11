@@ -98,6 +98,8 @@ p {
 .top-section {
   background-image: url(../img/top-section/bg.png);
   background-position-y: -340px; }
+  .top-section_header {
+    background-color: #0D5699; }
   .top-section .card {
     position: absolute;
     bottom: 270px;

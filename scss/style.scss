@@ -131,6 +131,12 @@ p{
     background-image: url(../img/top-section/bg.png);
     background-position-y: -340px;
 
+    &_header{
+        // background-image: url(../img/top-section/bg-header-top-section.png);
+        // background-size: contain;
+        background-color: $blue;
+    }
+
     .card{
         position: absolute;
         bottom: 270px;
